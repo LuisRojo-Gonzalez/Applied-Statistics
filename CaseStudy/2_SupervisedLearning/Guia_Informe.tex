@@ -1,0 +1,77 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\geometry{letterpaper,left=2.4cm,right=2.4cm,top=2.3cm,bottom=2.3cm}
+\linespread{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlist[itemize]{leftmargin=1.4em,topsep=1pt,itemsep=1pt}
+\setlist[enumerate]{leftmargin=1.7em,topsep=1pt,itemsep=1pt}
+\definecolor{iiBlue}{HTML}{1F4E79}
+\definecolor{iiOrange}{HTML}{C55A11}
+\newtcolorbox{propbox}[1]{colback=iiBlue!6,colframe=iiBlue,coltitle=white,fonttitle=\bfseries,title=#1,arc=2pt,boxrule=0.9pt,left=6pt,right=6pt,top=3pt,bottom=3pt}
+\newtcolorbox{alertbox}[1]{colback=iiOrange!7,colframe=iiOrange,coltitle=white,fonttitle=\bfseries,title=#1,arc=2pt,boxrule=0.9pt,left=6pt,right=6pt,top=3pt,bottom=3pt}
+\newcommand{\hrulethin}{\noindent\rule{\textwidth}{0.6pt}}
+\begin{document}\pagestyle{plain}
+\begin{center}
+    \textbf{\large Universidad de Santiago de Chile}\\[0.1cm]
+    Departamento de Ingeniería Industrial
+\end{center}
+\vspace{0.15cm}\hrulethin\vspace{0.35cm}
+\begin{center}
+    {\scshape Estadística Aplicada \quad$\cdot$\quad Caso 2 · Clasificación supervisada}\\[0.35cm]
+    {\LARGE \textbf{Guía del informe (respaldo)}}\\[0.15cm]
+    {\large Proyecto Integrador: Clasificación Supervisada}\\[0.2cm]
+    Predicción de una respuesta categórica
+\end{center}
+\vspace{0.2cm}\hrulethin\vspace{0.4cm}
+El informe es un \textbf{respaldo} del producto evaluado (presentación y script). Máximo \textbf{5 páginas}, sin contar portada ni referencias. Cada tabla o figura debe sustentar una decisión; sin volcados de consola. El código completo vive en el script reproducible.
+
+\section*{Estructura sugerida (6 secciones breves)}
+\begin{enumerate}
+\item \textbf{Problema, datos y disponibilidad temporal.} Decisión, unidad, clases, clase positiva y costo de FP/FN; fuente y licencia; qué información existe al corte.
+\item \textbf{Calidad, prevalencia y desbalance.} Faltantes, dependencia, prevalencia global y por grupo; estrategia de desbalance.
+\item \textbf{Validación y preparación.} Partición coherente, resamples comunes, semillas y preparación dentro de folds (sin leakage).
+\item \textbf{Modelos y ajuste.} Baseline, logística, KNN, SVM, árbol, Random Forest y boosting; hiperparámetros y su selección.
+\item \textbf{Discriminación, calibración y política.} ROC-AUC/PR-AUC con incertidumbre; log-loss/Brier; umbral o top-$k$ por costos y capacidad.
+\item \textbf{Test, subgrupos, límites y recomendación.} Test único del sistema congelado; matriz de confusión; error por subgrupo; drift y recomendación.
+\end{enumerate}
+
+\section*{Tabla mínima de validación}
+\begin{center}\small
+\begin{tabular}{llllllll}
+\toprule
+Modelo & ROC-AUC & PR-AUC & Log-loss & Precision & Recall & F1 & Costo \\
+\midrule
+Baseline & & & & & & & \\
+Logística & & & & & & & \\
+KNN & & & & & & & \\
+SVM lineal / kernel & & & & & & & \\
+Árbol & & & & & & & \\
+Random Forest & & & & & & & \\
+Boosting & & & & & & & \\
+\bottomrule
+\end{tabular}\end{center}
+
+El sistema final se reporta aparte (validación vs test), con mejora frente al baseline. Incluya un anexo con el diccionario de variables.
+
+\section*{Preguntas que el informe debe poder responder}
+\begin{itemize}
+\item ¿Qué decisión apoya la predicción y qué información existe al instante de decidir?
+\item ¿Por qué la partición y la validación representan el uso futuro (sin leakage)?
+\item ¿El sistema supera el baseline con una magnitud útil y estable?
+\item ¿Qué límites y qué monitoreo condicionan su uso?
+\end{itemize}\end{document}

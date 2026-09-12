@@ -1,0 +1,85 @@
+archivo,variable,descripcion,rol,disponibilidad,unidad,tipo,faltantes
+entrenamiento.csv,registro_id,Centro-turno diario; clave unica,identificador,al corte,id,object,0
+entrenamiento.csv,fecha,Fecha de corte al inicio del turno,particion,al corte,AAAA-MM-DD,object,0
+entrenamiento.csv,centro,Centro de distribucion,predictor,al corte,categoria,object,0
+entrenamiento.csv,turno,Turno planificado,predictor,al corte,categoria,object,0
+entrenamiento.csv,pedidos,Pedidos confirmados,predictor,al corte,pedidos,int64,0
+entrenamiento.csv,unidades,Unidades confirmadas,predictor,al corte,unidades,int64,0
+entrenamiento.csv,lineas,Lineas confirmadas,predictor,al corte,lineas,int64,0
+entrenamiento.csv,distancia_m,Recorrido planificado; puede faltar,predictor,al corte,m,float64,37
+entrenamiento.csv,ocupacion_pct,Ocupacion inicial de almacenamiento; puede faltar,predictor,al corte,porcentaje,float64,20
+entrenamiento.csv,operarios,Dotacion planificada,predictor,al corte,personas,int64,0
+entrenamiento.csv,urgentes_pct,Fraccion urgente de pedidos,predictor,al corte,porcentaje,float64,0
+entrenamiento.csv,promocion,Promocion anunciada,predictor,al corte,0/1,int64,0
+entrenamiento.csv,carga_proxy_1,Indicador redundante de carga,predictor,al corte,indice,float64,0
+entrenamiento.csv,carga_proxy_2,Segundo indicador redundante de carga,predictor,al corte,indice,float64,0
+entrenamiento.csv,horas_persona,Trabajo efectivamente requerido,respuesta,cierre del turno,horas-persona,float64,0
+entrenamiento.csv,costo_cierre_clp,Costo posterior altamente asociado con respuesta,excluir_fuga,cierre del turno,CLP,float64,0
+entrenamiento.csv,ruido_1,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+entrenamiento.csv,ruido_2,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+entrenamiento.csv,ruido_3,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+entrenamiento.csv,ruido_4,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+entrenamiento.csv,rol_particion,Separacion temporal fijada; no predictor,particion,al corte,categoria,object,0
+validacion.csv,registro_id,Centro-turno diario; clave unica,identificador,al corte,id,object,0
+validacion.csv,fecha,Fecha de corte al inicio del turno,particion,al corte,AAAA-MM-DD,object,0
+validacion.csv,centro,Centro de distribucion,predictor,al corte,categoria,object,0
+validacion.csv,turno,Turno planificado,predictor,al corte,categoria,object,0
+validacion.csv,pedidos,Pedidos confirmados,predictor,al corte,pedidos,int64,0
+validacion.csv,unidades,Unidades confirmadas,predictor,al corte,unidades,int64,0
+validacion.csv,lineas,Lineas confirmadas,predictor,al corte,lineas,int64,0
+validacion.csv,distancia_m,Recorrido planificado; puede faltar,predictor,al corte,m,float64,5
+validacion.csv,ocupacion_pct,Ocupacion inicial de almacenamiento; puede faltar,predictor,al corte,porcentaje,float64,6
+validacion.csv,operarios,Dotacion planificada,predictor,al corte,personas,int64,0
+validacion.csv,urgentes_pct,Fraccion urgente de pedidos,predictor,al corte,porcentaje,float64,0
+validacion.csv,promocion,Promocion anunciada,predictor,al corte,0/1,int64,0
+validacion.csv,carga_proxy_1,Indicador redundante de carga,predictor,al corte,indice,float64,0
+validacion.csv,carga_proxy_2,Segundo indicador redundante de carga,predictor,al corte,indice,float64,0
+validacion.csv,horas_persona,Trabajo efectivamente requerido,respuesta,cierre del turno,horas-persona,float64,0
+validacion.csv,costo_cierre_clp,Costo posterior altamente asociado con respuesta,excluir_fuga,cierre del turno,CLP,float64,0
+validacion.csv,ruido_1,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+validacion.csv,ruido_2,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+validacion.csv,ruido_3,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+validacion.csv,ruido_4,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+validacion.csv,rol_particion,Separacion temporal fijada; no predictor,particion,al corte,categoria,object,0
+prueba_final.csv,registro_id,Centro-turno diario; clave unica,identificador,al corte,id,object,0
+prueba_final.csv,fecha,Fecha de corte al inicio del turno,particion,al corte,AAAA-MM-DD,object,0
+prueba_final.csv,centro,Centro de distribucion,predictor,al corte,categoria,object,0
+prueba_final.csv,turno,Turno planificado,predictor,al corte,categoria,object,0
+prueba_final.csv,pedidos,Pedidos confirmados,predictor,al corte,pedidos,int64,0
+prueba_final.csv,unidades,Unidades confirmadas,predictor,al corte,unidades,int64,0
+prueba_final.csv,lineas,Lineas confirmadas,predictor,al corte,lineas,int64,0
+prueba_final.csv,distancia_m,Recorrido planificado; puede faltar,predictor,al corte,m,float64,15
+prueba_final.csv,ocupacion_pct,Ocupacion inicial de almacenamiento; puede faltar,predictor,al corte,porcentaje,float64,10
+prueba_final.csv,operarios,Dotacion planificada,predictor,al corte,personas,int64,0
+prueba_final.csv,urgentes_pct,Fraccion urgente de pedidos,predictor,al corte,porcentaje,float64,0
+prueba_final.csv,promocion,Promocion anunciada,predictor,al corte,0/1,int64,0
+prueba_final.csv,carga_proxy_1,Indicador redundante de carga,predictor,al corte,indice,float64,0
+prueba_final.csv,carga_proxy_2,Segundo indicador redundante de carga,predictor,al corte,indice,float64,0
+prueba_final.csv,horas_persona,Trabajo efectivamente requerido,respuesta,cierre del turno,horas-persona,float64,0
+prueba_final.csv,costo_cierre_clp,Costo posterior altamente asociado con respuesta,excluir_fuga,cierre del turno,CLP,float64,0
+prueba_final.csv,ruido_1,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+prueba_final.csv,ruido_2,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+prueba_final.csv,ruido_3,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+prueba_final.csv,ruido_4,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+prueba_final.csv,rol_particion,Separacion temporal fijada; no predictor,particion,al corte,categoria,object,0
+centro_nuevo.csv,registro_id,Centro-turno diario; clave unica,identificador,al corte,id,object,0
+centro_nuevo.csv,fecha,Fecha de corte al inicio del turno,particion,al corte,AAAA-MM-DD,object,0
+centro_nuevo.csv,centro,Centro de distribucion,predictor,al corte,categoria,object,0
+centro_nuevo.csv,turno,Turno planificado,predictor,al corte,categoria,object,0
+centro_nuevo.csv,pedidos,Pedidos confirmados,predictor,al corte,pedidos,int64,0
+centro_nuevo.csv,unidades,Unidades confirmadas,predictor,al corte,unidades,int64,0
+centro_nuevo.csv,lineas,Lineas confirmadas,predictor,al corte,lineas,int64,0
+centro_nuevo.csv,distancia_m,Recorrido planificado; puede faltar,predictor,al corte,m,float64,1
+centro_nuevo.csv,ocupacion_pct,Ocupacion inicial de almacenamiento; puede faltar,predictor,al corte,porcentaje,float64,0
+centro_nuevo.csv,operarios,Dotacion planificada,predictor,al corte,personas,int64,0
+centro_nuevo.csv,urgentes_pct,Fraccion urgente de pedidos,predictor,al corte,porcentaje,float64,0
+centro_nuevo.csv,promocion,Promocion anunciada,predictor,al corte,0/1,int64,0
+centro_nuevo.csv,carga_proxy_1,Indicador redundante de carga,predictor,al corte,indice,float64,0
+centro_nuevo.csv,carga_proxy_2,Segundo indicador redundante de carga,predictor,al corte,indice,float64,0
+centro_nuevo.csv,horas_persona,Trabajo efectivamente requerido,respuesta,cierre del turno,horas-persona,float64,0
+centro_nuevo.csv,costo_cierre_clp,Costo posterior altamente asociado con respuesta,excluir_fuga,cierre del turno,CLP,float64,0
+centro_nuevo.csv,ruido_1,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+centro_nuevo.csv,ruido_2,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+centro_nuevo.csv,ruido_3,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+centro_nuevo.csv,ruido_4,Indicador auxiliar sin significado operacional,predictor,al corte,indice,float64,0
+centro_nuevo.csv,rol_particion,Separacion temporal fijada; no predictor,particion,al corte,categoria,object,0

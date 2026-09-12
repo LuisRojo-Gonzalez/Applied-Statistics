@@ -1,0 +1,24 @@
+archivo,variable,descripcion,rol,disponibilidad,unidad,tipo,faltantes
+clientes_enero.csv,cliente_id,Identificador estable del cliente,identificador,al corte,id,object,0
+clientes_enero.csv,pedidos_mes,Promedio mensual en los seis meses previos,predictor,al corte,pedidos/mes,float64,0
+clientes_enero.csv,ticket_mclp,Ticket medio,predictor,al corte,millones de CLP,float64,0
+clientes_enero.csv,recencia_dias,Dias desde ultima compra,predictor,al corte,dias,float64,0
+clientes_enero.csv,margen_pct,Margen comercial medio; puede faltar,predictor,al corte,porcentaje,float64,22
+clientes_enero.csv,devoluciones_pct,Porcentaje de pedidos devueltos,predictor,al corte,porcentaje,float64,0
+clientes_enero.csv,variabilidad_pedidos,Coeficiente de variacion mensual,predictor,al corte,razon,float64,0
+clientes_enero.csv,canal,Canal habitual,predictor,al corte,categoria,object,0
+clientes_enero.csv,contrato,Contrato comercial vigente,predictor,al corte,0/1,int64,0
+clientes_enero.csv,region,Region de atencion,predictor,al corte,categoria,object,0
+clientes_julio.csv,cliente_id,Identificador estable del cliente,identificador,al corte,id,object,0
+clientes_julio.csv,pedidos_mes,Promedio mensual en los seis meses previos,predictor,al corte,pedidos/mes,float64,0
+clientes_julio.csv,ticket_mclp,Ticket medio,predictor,al corte,millones de CLP,float64,0
+clientes_julio.csv,recencia_dias,Dias desde ultima compra,predictor,al corte,dias,float64,0
+clientes_julio.csv,margen_pct,Margen comercial medio; puede faltar,predictor,al corte,porcentaje,float64,22
+clientes_julio.csv,devoluciones_pct,Porcentaje de pedidos devueltos,predictor,al corte,porcentaje,float64,0
+clientes_julio.csv,variabilidad_pedidos,Coeficiente de variacion mensual,predictor,al corte,razon,float64,0
+clientes_julio.csv,canal,Canal habitual,predictor,al corte,categoria,object,0
+clientes_julio.csv,contrato,Contrato comercial vigente,predictor,al corte,0/1,int64,0
+clientes_julio.csv,region,Region de atencion,predictor,al corte,categoria,object,0
+resultados_semestre.csv,cliente_id,Cliente de enero; clave para unir,identificador,al corte,id,object,0
+resultados_semestre.csv,abandono_semestre,Abandono observado despues de enero; solo evaluacion externa,evaluacion_externa,julio,0/1,int64,0
+resultados_semestre.csv,margen_semestre_mclp,Margen observado del semestre; nunca entrada del clustering de enero,evaluacion_externa,julio,millones de CLP,float64,0

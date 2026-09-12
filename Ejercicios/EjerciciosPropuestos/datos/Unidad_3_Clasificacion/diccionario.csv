@@ -1,0 +1,48 @@
+archivo,variable,descripcion,rol,disponibilidad,unidad,tipo,faltantes
+entrenamiento.csv,pedido_id,Pedido evaluado antes de despachar,identificador,al corte,id,object,0
+entrenamiento.csv,semana,Semana de corte; 100 pedidos por semana,particion,al corte,semana,int64,0
+entrenamiento.csv,centro,Centro responsable,predictor,al corte,categoria,object,0
+entrenamiento.csv,canal,Canal de solicitud,predictor,al corte,categoria,object,0
+entrenamiento.csv,camiones_cola,Cola conocida,predictor,al corte,camiones,int64,0
+entrenamiento.csv,distancia_km,Distancia planificada; puede faltar,predictor,al corte,km,float64,30
+entrenamiento.csv,holgura_min,Holgura planificada contra promesa de entrega,predictor,al corte,min,float64,0
+entrenamiento.csv,revision_documental,Revision requerida conocida,predictor,al corte,0/1,int64,0
+entrenamiento.csv,urgente,Servicio urgente contratado,predictor,al corte,0/1,int64,0
+entrenamiento.csv,incidencias_previas,Incidencias del proveedor antes del corte,predictor,al corte,conteo,int64,0
+entrenamiento.csv,carga_proxy,Proxy correlacionado de la cola,predictor,al corte,indice,float64,0
+entrenamiento.csv,atraso,1 si el pedido incumple su promesa,respuesta,al entregar,0/1,int64,0
+entrenamiento.csv,compensacion_real_clp,Compensacion conocida despues; excluir,excluir_fuga,al entregar,CLP,float64,0
+validacion.csv,pedido_id,Pedido evaluado antes de despachar,identificador,al corte,id,object,0
+validacion.csv,semana,Semana de corte; 100 pedidos por semana,particion,al corte,semana,int64,0
+validacion.csv,centro,Centro responsable,predictor,al corte,categoria,object,0
+validacion.csv,canal,Canal de solicitud,predictor,al corte,categoria,object,0
+validacion.csv,camiones_cola,Cola conocida,predictor,al corte,camiones,int64,0
+validacion.csv,distancia_km,Distancia planificada; puede faltar,predictor,al corte,km,float64,13
+validacion.csv,holgura_min,Holgura planificada contra promesa de entrega,predictor,al corte,min,float64,0
+validacion.csv,revision_documental,Revision requerida conocida,predictor,al corte,0/1,int64,0
+validacion.csv,urgente,Servicio urgente contratado,predictor,al corte,0/1,int64,0
+validacion.csv,incidencias_previas,Incidencias del proveedor antes del corte,predictor,al corte,conteo,int64,0
+validacion.csv,carga_proxy,Proxy correlacionado de la cola,predictor,al corte,indice,float64,0
+validacion.csv,atraso,1 si el pedido incumple su promesa,respuesta,al entregar,0/1,int64,0
+validacion.csv,compensacion_real_clp,Compensacion conocida despues; excluir,excluir_fuga,al entregar,CLP,float64,0
+prueba_final.csv,pedido_id,Pedido evaluado antes de despachar,identificador,al corte,id,object,0
+prueba_final.csv,semana,Semana de corte; 100 pedidos por semana,particion,al corte,semana,int64,0
+prueba_final.csv,centro,Centro responsable,predictor,al corte,categoria,object,0
+prueba_final.csv,canal,Canal de solicitud,predictor,al corte,categoria,object,0
+prueba_final.csv,camiones_cola,Cola conocida,predictor,al corte,camiones,int64,0
+prueba_final.csv,distancia_km,Distancia planificada; puede faltar,predictor,al corte,km,float64,11
+prueba_final.csv,holgura_min,Holgura planificada contra promesa de entrega,predictor,al corte,min,float64,0
+prueba_final.csv,revision_documental,Revision requerida conocida,predictor,al corte,0/1,int64,0
+prueba_final.csv,urgente,Servicio urgente contratado,predictor,al corte,0/1,int64,0
+prueba_final.csv,incidencias_previas,Incidencias del proveedor antes del corte,predictor,al corte,conteo,int64,0
+prueba_final.csv,carga_proxy,Proxy correlacionado de la cola,predictor,al corte,indice,float64,0
+prueba_final.csv,atraso,1 si el pedido incumple su promesa,respuesta,al entregar,0/1,int64,0
+prueba_final.csv,compensacion_real_clp,Compensacion conocida despues; excluir,excluir_fuga,al entregar,CLP,float64,0
+reclamos_multiclase.csv,reclamo_id,Reclamo independiente,identificador,al corte,id,object,0
+reclamos_multiclase.csv,senales_entrega,"Conteo de incidencias declaradas al abrir, relativas a entrega",predictor,al corte,conteo,int64,0
+reclamos_multiclase.csv,senales_factura,Conteo declarado sobre facturacion,predictor,al corte,conteo,int64,0
+reclamos_multiclase.csv,senales_producto,Conteo declarado sobre producto,predictor,al corte,conteo,int64,0
+reclamos_multiclase.csv,contactos_previos,Contactos anteriores a apertura,predictor,al corte,conteo,int64,0
+reclamos_multiclase.csv,canal,Canal de apertura,predictor,al corte,categoria,object,0
+reclamos_multiclase.csv,clase,Equipo al que finalmente correspondio resolver,respuesta,resolucion,categoria,object,0
+reclamos_multiclase.csv,rol_particion,Particion fija independiente del target,particion,al corte,categoria,object,0

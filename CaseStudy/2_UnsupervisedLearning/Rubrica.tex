@@ -1,0 +1,184 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{pdflscape}
+\geometry{letterpaper,left=2.4cm,right=2.4cm,top=2.3cm,bottom=2.3cm}
+\linespread{1.1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlist[itemize]{leftmargin=1.4em,topsep=1pt,itemsep=1pt}
+\setlist[enumerate]{leftmargin=1.7em,topsep=1pt,itemsep=1pt}
+\definecolor{iiBlue}{HTML}{1F4E79}
+\definecolor{iiOrange}{HTML}{C55A11}
+\newtcolorbox{propbox}[1]{colback=iiBlue!6,colframe=iiBlue,coltitle=white,fonttitle=\bfseries,title=#1,arc=2pt,boxrule=0.9pt,left=6pt,right=6pt,top=3pt,bottom=3pt}
+\newtcolorbox{alertbox}[1]{colback=iiOrange!7,colframe=iiOrange,coltitle=white,fonttitle=\bfseries,title=#1,arc=2pt,boxrule=0.9pt,left=6pt,right=6pt,top=3pt,bottom=3pt}
+\newcommand{\hrulethin}{\noindent\rule{\textwidth}{0.6pt}}
+\begin{document}\pagestyle{plain}
+\begin{center}
+    \textbf{\large Universidad de Santiago de Chile}\\[0.1cm]
+    Departamento de Ingeniería Industrial
+\end{center}
+\vspace{0.15cm}\hrulethin\vspace{0.35cm}
+\begin{center}
+    {\scshape Estadística Aplicada \quad$\cdot$\quad Caso 2 · Clasificación no supervisada}\\[0.35cm]
+    {\LARGE \textbf{Rúbrica de evaluación}}\\[0.15cm]
+    {\large Proyecto Integrador: Clasificación No Supervisada}\\[0.2cm]
+    Descubrimiento de estructura mediante clustering
+\end{center}
+\vspace{0.2cm}\hrulethin\vspace{0.4cm}
+El producto se evalúa con \textbf{dos notas independientes}: \textbf{Cátedra} (presentación, oratoria, rigor e informe de respaldo) y \textbf{Laboratorio} (el script). Cada instrumento suma 100 puntos y se convierte por separado según la regla de la asignatura. \textbf{Niveles por dimensión:} 1 ausente o erróneo; 2 parcial con omisiones relevantes; 3 mínimo funcional;
+4 claro, coherente y reproducible; 5 completo, crítico y defendible individualmente.
+
+\section*{Cátedra --- ponderación}
+\begin{center}\small
+\begin{tabular}{p{4.9cm} p{8.2cm} c}
+\toprule
+Dimensión & Qué se evalúa & Puntos \\
+\midrule
+Oratoria y dominio conceptual & Expone sin leer, explica en vez de recitar, maneja los conceptos y responde de forma individual. & 45 \\
+Calidad de la presentación & Diseño claro, una idea por lámina, visuales legibles con título y comentario; narrativa coherente. & 35 \\
+Rigor técnico y decisiones & Método correcto y justificado (validación, baseline, métricas, interpretación). & 15 \\
+Informe de respaldo & Máximo 5 páginas, coherente con la presentación y el script; respalda las afirmaciones. & 5 \\
+\midrule
+\textbf{Total} & & \textbf{100} \\
+\bottomrule
+\end{tabular}\end{center}
+\begin{landscape}
+\thispagestyle{plain}
+\section*{Descriptores --- Cátedra}
+\footnotesize\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{p{2.4cm} p{3.15cm} p{3.15cm} p{3.15cm} p{3.15cm} p{3.15cm}}
+\toprule
+Dimensión & Nivel 1 (20\%) & Nivel 2 (40\%) & Nivel 3 (60\%) & Nivel 4 (80\%) & Nivel 5 (100\%) \\
+\midrule
+Oratoria y dominio conceptual (45) & Lee la mayor parte de la exposición o no logra explicar; no responde las preguntas o comete errores conceptuales graves. & Recita apoyándose en notas o láminas; responde de forma vaga o imprecisa; dominio conceptual parcial. & Expone con apoyo puntual; explica las ideas centrales y responde lo básico, con vacíos menores. & Expone con fluidez sin leer, explica en vez de recitar y responde con solvencia la mayoría de las preguntas. & Domina y conecta los conceptos con la evidencia y responde con precisión preguntas fuera de lo previsto, de forma individual. \\
+Calidad de la presentación (35) & Láminas sobrecargadas o ilegibles, con volcados de código o texto; sin narrativa. & Diseño irregular, varias ideas por lámina o figuras sin título ni comentario; narrativa débil. & Diseño funcional, una idea por lámina en general y figuras legibles; narrativa comprensible. & Diseño claro y consistente, una idea por lámina, figuras con título, unidades y comentario; narrativa coherente. & Diseño sobresaliente que refuerza el mensaje; cada lámina aporta una conclusión visible y la historia se sigue sin esfuerzo. \\
+Rigor técnico y decisiones (15) & Método incorrecto o sin baseline; conclusiones no sostenibles o causalidad injustificada. & Método incompleto; comparaciones sin incertidumbre o decisiones poco justificadas. & Método correcto en lo esencial (validación, baseline, métricas) con justificación limitada. & Decisiones justificadas y coherentes con lo presentado; métricas e interpretación adecuadas. & Además, discute supuestos, sensibilidad y límites, y descarta complejidad innecesaria con evidencia. \\
+Informe de respaldo (5) & Ausente, excede el límite de páginas o contradice la presentación o el script. & Incompleto o meramente descriptivo; respalda débilmente las afirmaciones. & Cumple el formato ($\leq 5$ páginas) y respalda las afirmaciones principales. & Claro, trazable y coherente con la presentación y el script; tablas y figuras sustentan decisiones. & Síntesis precisa que permite reconstruir la evidencia y la recomendación. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.25cm}
+\footnotesize La nota de cada dimensión se asigna por el nivel alcanzado (1 a 5), escalado a su puntaje máximo.
+\end{landscape}
+
+\section*{Cátedra --- puntaje por nivel}
+Cada nivel equivale a un \% de logro (Nivel $k = k\times 20\%$); el puntaje es el máximo por ese \%:
+\begin{center}\small
+\begin{tabular}{l ccccc c}
+\toprule
+Dimensión & N1 & N2 & N3 & N4 & N5 & Máx \\
+\multicolumn{1}{r}{\footnotesize \% de logro} & 20 & 40 & 60 & 80 & 100 & \\
+\midrule
+Oratoria y dominio conceptual & 9 & 18 & 27 & 36 & 45 & 45 \\
+Calidad de la presentación & 7 & 14 & 21 & 28 & 35 & 35 \\
+Rigor técnico y decisiones & 3 & 6 & 9 & 12 & 15 & 15 \\
+Informe de respaldo & 1 & 2 & 3 & 4 & 5 & 5 \\
+\midrule
+\textbf{Total} & 20 & 40 & 60 & 80 & 100 & \textbf{100} \\
+\bottomrule
+\end{tabular}\end{center}
+\section*{Cátedra --- penalizaciones}
+Descuentos \textbf{fijos} sobre el subtotal (100), acumulables.
+\begin{center}\small
+\begin{tabular}{p{11cm} c}
+\toprule
+Situación & Descuento \\
+\midrule
+Lee gran parte de la exposición (láminas o notas) & $-15$ \\
+No maneja los conceptos al ser preguntado & $-15$ \\
+Informe ausente o supera 5 páginas & $-5$ \\
+Excede el tiempo (>10 min) o no participan todos los integrantes & $-5$ \\
+\bottomrule
+\end{tabular}\end{center}
+\clearpage
+\section*{Laboratorio --- ponderación}
+Nota independiente del script.
+\begin{center}\small
+\begin{tabular}{p{4.9cm} p{8.2cm} c}
+\toprule
+Dimensión & Qué se evalúa & Puntos \\
+\midrule
+Reproducibilidad y ejecución & Ejecuta desde una sesión limpia y reproduce los resultados presentados. & 40 \\
+Pipeline sin fuga (leakage) & Preparación, selección y remuestreo dentro de los folds; test intacto. & 35 \\
+Legibilidad, semillas y coherencia & Código legible y con semillas; los resultados coinciden con la presentación. & 25 \\
+\midrule
+\textbf{Total} & & \textbf{100} \\
+\bottomrule
+\end{tabular}\end{center}
+\begin{landscape}
+\thispagestyle{plain}
+\section*{Descriptores --- Laboratorio}
+\footnotesize\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{p{2.4cm} p{3.15cm} p{3.15cm} p{3.15cm} p{3.15cm} p{3.15cm}}
+\toprule
+Dimensión & Nivel 1 (20\%) & Nivel 2 (40\%) & Nivel 3 (60\%) & Nivel 4 (80\%) & Nivel 5 (100\%) \\
+\midrule
+Reproducibilidad y ejecución (40) & No ejecuta o no reproduce lo presentado; requiere reescritura. & Ejecuta con intervención manual no documentada o reproduce sólo parcialmente. & Reproduce los resultados principales desde una sesión limpia siguiendo instrucciones básicas. & Reproduce todo con una ejecución única y documentada. & Además, automatiza la ejecución y verifica la reproducibilidad (semillas globales, comprobaciones). \\
+Pipeline sin fuga (leakage) (35) & Fuga evidente: preprocesamiento global, o el test participa del ajuste o la selección. & Validación con errores u operaciones fuera de los folds que alteran la estimación. & Separación entrenamiento-validación-test correcta y validación cruzada cuando corresponde. & Toda transformación, selección y remuestreo ocurren dentro de cada fold; el test permanece intacto. & Además, incluye verificaciones que detectan fuga, inconsistencias de partición o fuga temporal. \\
+Legibilidad, semillas y coherencia (25) & Código ilegible o sin semillas; no corresponde con lo presentado. & Nombres inconsistentes o documentación mínima; resultados que no coinciden con la presentación. & Código legible, con semillas y documentación básica; coincide en lo esencial con la presentación. & Modular y bien documentado; los resultados coinciden exactamente con la presentación y el informe. & Además, es parametrizable, con manejo de errores y registro de configuraciones. \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.25cm}
+\footnotesize La nota de cada dimensión se asigna por el nivel alcanzado (1 a 5), escalado a su puntaje máximo.
+\end{landscape}
+
+\section*{Laboratorio --- puntaje por nivel}
+\begin{center}\small
+\begin{tabular}{l ccccc c}
+\toprule
+Dimensión & N1 & N2 & N3 & N4 & N5 & Máx \\
+\multicolumn{1}{r}{\footnotesize \% de logro} & 20 & 40 & 60 & 80 & 100 & \\
+\midrule
+Reproducibilidad y ejecución & 8 & 16 & 24 & 32 & 40 & 40 \\
+Pipeline sin fuga (leakage) & 7 & 14 & 21 & 28 & 35 & 35 \\
+Legibilidad, semillas y coherencia & 5 & 10 & 15 & 20 & 25 & 25 \\
+\midrule
+\textbf{Total} & 20 & 40 & 60 & 80 & 100 & \textbf{100} \\
+\bottomrule
+\end{tabular}\end{center}
+\section*{Laboratorio --- penalizaciones}
+Descuentos \textbf{fijos} sobre el subtotal (100), acumulables.
+\begin{center}\small
+\begin{tabular}{p{11cm} c}
+\toprule
+Situación & Descuento \\
+\midrule
+Fuga de información (leakage) o uso del test para seleccionar & $-25$ \\
+Requiere cambios manuales no documentados para ejecutar & $-10$ \\
+\bottomrule
+\end{tabular}\end{center}
+\section*{Focos técnicos (conceptos a dominar)}
+\begin{itemize}
+\item Elección de distancia y test de Hopkins.
+\item K-means vs PAM; DBSCAN/HDBSCAN y densidad variable.
+\item GMM, EM y selección por BIC/ICL.
+\item Linkage, dendrograma y cofenética.
+\item Silhouette, CH, DB y estabilidad (Rand/NMI/VI).
+\item En clustering no hay una ``verdad'' observable.
+\end{itemize}
+\section*{Co-evaluación (pondera ambas notas)}
+Al cierre, cada integrante evalúa a sus compañeros mediante una encuesta. Para cada estudiante se calcula el
+promedio de los puntajes recibidos, expresado como porcentaje de logro. Se aplica por igual a \textbf{ambas notas}
+(cátedra y laboratorio).
+\begin{itemize}
+\item Si ese promedio es $\geq 60\%$, las notas individuales son las del grupo (no se alteran).
+\item Si es $< 60\%$, cada nota individual se pondera por ese promedio (nota individual $=$ nota del grupo $\times$ logro de co-evaluación).
+\item Quien no responda la encuesta recibe la nota mínima en su co-evaluación, sin afectar a los demás.
+\end{itemize}
+Su objetivo es que todos trabajen.
+\end{document}

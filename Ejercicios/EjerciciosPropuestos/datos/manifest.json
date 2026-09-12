@@ -1,0 +1,119 @@
+{
+  "semilla": 20260909,
+  "archivos": [
+    {
+      "archivo": "Unidad_0_Fundamentos/diccionario.csv",
+      "filas": 12,
+      "columnas": 8,
+      "sha256": "7572bd0fa571b026408bbe2563d494faea9d0122e16fcaad4963ec910f95afc5"
+    },
+    {
+      "archivo": "Unidad_0_Fundamentos/lotes_piloto.csv",
+      "filas": 360,
+      "columnas": 12,
+      "sha256": "7648f6caa57c9f78059cbc262027ca1afe807005e4d28691251e45f9aa6763ba"
+    },
+    {
+      "archivo": "Unidad_1_Regularizacion/centro_nuevo.csv",
+      "filas": 30,
+      "columnas": 21,
+      "sha256": "eaf3042f07f20b2dee1d54f621a0a50f61e20fb468ea9ad156f23339d304c3c1"
+    },
+    {
+      "archivo": "Unidad_1_Regularizacion/diccionario.csv",
+      "filas": 84,
+      "columnas": 8,
+      "sha256": "5fdaafe9b2899218709cfa6ebbb95d1e3e75aadccfe98bf5077f8e285a714a0b"
+    },
+    {
+      "archivo": "Unidad_1_Regularizacion/entrenamiento.csv",
+      "filas": 960,
+      "columnas": 21,
+      "sha256": "5d29ae924abb79e54da47bbac2467bcbead76cca7fe8e62c86ae1b723bf90241"
+    },
+    {
+      "archivo": "Unidad_1_Regularizacion/prueba_final.csv",
+      "filas": 240,
+      "columnas": 21,
+      "sha256": "6ea7c6207f592b198bdf58dda94408bed7da5cce0f521f377bf11e4c5d739f2d"
+    },
+    {
+      "archivo": "Unidad_1_Regularizacion/validacion.csv",
+      "filas": 240,
+      "columnas": 21,
+      "sha256": "bd0138f1e187f49c759e84c68ca168cbdc4887525e1ebc5dc174077009dbcd81"
+    },
+    {
+      "archivo": "Unidad_2_Ensamble/desarrollo.csv",
+      "filas": 900,
+      "columnas": 12,
+      "sha256": "927c7ab0a16807346b4982e2146ea406ae66a292aa46302ade2ee280677f460b"
+    },
+    {
+      "archivo": "Unidad_2_Ensamble/diccionario.csv",
+      "filas": 24,
+      "columnas": 8,
+      "sha256": "42beefdcbd9a21674cc7257d1577030d74b5de8a8ead0a0ecdda9cbe22c7bb33"
+    },
+    {
+      "archivo": "Unidad_2_Ensamble/prueba_final.csv",
+      "filas": 300,
+      "columnas": 12,
+      "sha256": "b75090f964c833ab9c15915db0c50d41e58ce6fd9f378edfa2e68f6ccd313cb4"
+    },
+    {
+      "archivo": "Unidad_3_Clasificacion/diccionario.csv",
+      "filas": 47,
+      "columnas": 8,
+      "sha256": "19069bee15bf504cc4944b78e04c776e4023233e8d61868ca97deb0cf12c3b5f"
+    },
+    {
+      "archivo": "Unidad_3_Clasificacion/entrenamiento.csv",
+      "filas": 1200,
+      "columnas": 13,
+      "sha256": "bb8b3f1112136c57988f0e6c05cb4bb60089d9e713d3ebc1e196ce909788b65c"
+    },
+    {
+      "archivo": "Unidad_3_Clasificacion/prueba_final.csv",
+      "filas": 300,
+      "columnas": 13,
+      "sha256": "0bd9ef092439ee3d0e02df952f8eb6fc5252564ee05cab9a4f8063b8a0d43569"
+    },
+    {
+      "archivo": "Unidad_3_Clasificacion/reclamos_multiclase.csv",
+      "filas": 1000,
+      "columnas": 8,
+      "sha256": "f47bc3c518717627f30765000da09b80fc2761751bd7e60ec2bc01e74b86aa14"
+    },
+    {
+      "archivo": "Unidad_3_Clasificacion/validacion.csv",
+      "filas": 300,
+      "columnas": 13,
+      "sha256": "4e3a168c773672c404c0e2f64fc3cc74dadf8b2fa787c768b5feabcda4d45a16"
+    },
+    {
+      "archivo": "Unidad_4_Clustering/clientes_enero.csv",
+      "filas": 720,
+      "columnas": 10,
+      "sha256": "4479300d9a943b788bc16389670678a6a8b77e3910e751266addd3d49d4f355b"
+    },
+    {
+      "archivo": "Unidad_4_Clustering/clientes_julio.csv",
+      "filas": 720,
+      "columnas": 10,
+      "sha256": "fa806627ca6dc08fd186e0dc0470665e70e6123aa4b8f2cc3b42037236aa92da"
+    },
+    {
+      "archivo": "Unidad_4_Clustering/diccionario.csv",
+      "filas": 23,
+      "columnas": 8,
+      "sha256": "791f9d54c63aa1dd7afc4c3fe9473b0bb9dda0d47fe76246ac5e7149c591c639"
+    },
+    {
+      "archivo": "Unidad_4_Clustering/resultados_semestre.csv",
+      "filas": 720,
+      "columnas": 3,
+      "sha256": "b888f33b5c8b048497aaa644302e010fae873873e36e070e6d7c04349dd9b511"
+    }
+  ]
+}

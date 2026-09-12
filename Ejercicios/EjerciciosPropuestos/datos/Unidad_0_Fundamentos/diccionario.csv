@@ -1,0 +1,13 @@
+archivo,variable,descripcion,rol,disponibilidad,unidad,tipo,faltantes
+lotes_piloto.csv,lote_id,Lote de ensayo independiente; ambas mediciones usan el mismo lote,identificador,al corte,id,object,0
+lotes_piloto.csv,centro,Centro del ensayo,contexto,al corte,categoria,object,0
+lotes_piloto.csv,turno,Turno del ensayo,contexto,al corte,categoria,object,0
+lotes_piloto.csv,metodo,"Metodo asignado aleatoriamente, 120 lotes por nivel",tratamiento,al corte,categoria,object,0
+lotes_piloto.csv,lineas_pedido,Lineas del lote conocidas antes de preparar,predictor,al corte,lineas,int64,0
+lotes_piloto.csv,distancia_m,Recorrido planificado,predictor,al corte,m,float64,0
+lotes_piloto.csv,tiempo_antes_min,Tiempo del lote bajo procedimiento de referencia,referencia,antes de aplicar metodo,min,float64,0
+lotes_piloto.csv,tiempo_despues_min,Tiempo observado aplicando metodo asignado,respuesta,despues,min,float64,0
+lotes_piloto.csv,incumple_sla,1 si tiempo_despues_min supera 32,respuesta,despues,0/1,int64,0
+lotes_piloto.csv,alarma_previa,Alerta de demora disponible antes de ejecutar,predictor,al corte,0/1,int64,0
+lotes_piloto.csv,demanda_repuestos,Repuestos demandados por el lote,respuesta,despues,unidades,int64,0
+lotes_piloto.csv,costo_final_clp,Costo realizado; no usar para predecir demora,excluir_fuga,despues,CLP,float64,0

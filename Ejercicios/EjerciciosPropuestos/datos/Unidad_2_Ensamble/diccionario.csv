@@ -1,0 +1,25 @@
+archivo,variable,descripcion,rol,disponibilidad,unidad,tipo,faltantes
+desarrollo.csv,ventana_id,Ventana independiente; un camion evaluado por ventana,identificador,al corte,id,object,0
+desarrollo.csv,terminal,Terminal observado,predictor,al corte,categoria,object,0
+desarrollo.csv,camiones_cola,Camiones en cola al llegar,predictor,al corte,camiones,int64,0
+desarrollo.csv,muelles_activos,Muelles disponibles,predictor,al corte,muelles,int64,0
+desarrollo.csv,peso_t,Peso declarado de carga,predictor,al corte,t,float64,0
+desarrollo.csv,revision_documental,Necesidad de revision conocida al llegar,predictor,al corte,0/1,int64,0
+desarrollo.csv,operarios,Dotacion disponible,predictor,al corte,personas,int64,0
+desarrollo.csv,prioridad,Servicio prioritario contratado,predictor,al corte,0/1,int64,0
+desarrollo.csv,cola_proxy,Medicion redundante de cola,predictor,al corte,indice,float64,0
+desarrollo.csv,codigo_aleatorio,Identificador numerico arbitrario; usar solo en auditoria de importancia,identificador,al corte,codigo,int64,0
+desarrollo.csv,espera_min,Espera realizada hasta entrar al muelle,respuesta,despues,min,float64,0
+desarrollo.csv,costo_espera_real_clp,Costo realizado despues de esperar,excluir_fuga,despues,CLP,float64,0
+prueba_final.csv,ventana_id,Ventana independiente; un camion evaluado por ventana,identificador,al corte,id,object,0
+prueba_final.csv,terminal,Terminal observado,predictor,al corte,categoria,object,0
+prueba_final.csv,camiones_cola,Camiones en cola al llegar,predictor,al corte,camiones,int64,0
+prueba_final.csv,muelles_activos,Muelles disponibles,predictor,al corte,muelles,int64,0
+prueba_final.csv,peso_t,Peso declarado de carga,predictor,al corte,t,float64,0
+prueba_final.csv,revision_documental,Necesidad de revision conocida al llegar,predictor,al corte,0/1,int64,0
+prueba_final.csv,operarios,Dotacion disponible,predictor,al corte,personas,int64,0
+prueba_final.csv,prioridad,Servicio prioritario contratado,predictor,al corte,0/1,int64,0
+prueba_final.csv,cola_proxy,Medicion redundante de cola,predictor,al corte,indice,float64,0
+prueba_final.csv,codigo_aleatorio,Identificador numerico arbitrario; usar solo en auditoria de importancia,identificador,al corte,codigo,int64,0
+prueba_final.csv,espera_min,Espera realizada hasta entrar al muelle,respuesta,despues,min,float64,0
+prueba_final.csv,costo_espera_real_clp,Costo realizado despues de esperar,excluir_fuga,despues,CLP,float64,0
