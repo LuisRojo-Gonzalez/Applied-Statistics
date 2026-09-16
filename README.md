@@ -176,18 +176,18 @@ Las ponderaciones y fechas de esta sección corresponden a [`Slides.pdf`](Slides
 | Caso de estudio 2 ($CE_2$) | 25% | Aplicación e integración de contenidos: clasificación |
 | **Total** | **100%** | |
 
-$
+$$
 N_{PC}=0.05C_1+0.10C_2+0.10C_3+0.15C_4+0.35CE_1+0.25CE_2.
-$
+$$
 
 ### Examen ponderado de cátedra
 
 - **Eximición:** quienes obtengan $N_{PC}\geq 5.0$ se eximen y su nota definitiva de cátedra es $N_C=N_{PC}$.
 - **Al rendir el examen:** la presentación pondera **70%** y el examen ($N_E$), **30%** de la nota definitiva de cátedra:
 
-$
+$$
 N_C=0.70N_{PC}+0.30N_E.
-$
+$$
 
 ### Nota de laboratorio
 
@@ -198,9 +198,9 @@ $
 | Código del caso de estudio 2 ($N_{\mathrm{Cod}2}$) | 35% |
 | **Total** | **100%** |
 
-$
+$$
 N_L=0.30N_D+0.35N_{\mathrm{Cod}1}+0.35N_{\mathrm{Cod}2}.
-$
+$$
 
 El laboratorio **no tiene evaluación final**. El examen ponderado forma parte exclusivamente de la cátedra.
 
@@ -208,15 +208,15 @@ El laboratorio **no tiene evaluación final**. El examen ponderado forma parte e
 
 Se deben aprobar **ambos componentes por separado**:
 
-$
+$$
 N_C\geq 4.0 \qquad \text{y} \qquad N_L\geq 4.0.
-$
+$$
 
 Si ambos están aprobados, la nota final combina **60% de cátedra** y **40% de laboratorio**:
 
-$
+$$
 N_F=0.60N_C+0.40N_L.
-$
+$$
 
 ---
 
@@ -325,4 +325,5 @@ Departamento de Ingeniería Industrial · Universidad de Santiago de Chile
 <div align="center">
 <sub>Material docente · Estadística Aplicada · USACH</sub>
 </div>
+
 
